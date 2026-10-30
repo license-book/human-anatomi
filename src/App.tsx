@@ -1,7 +1,7 @@
 import {useMemo,useState} from "react";
 import {organs,regions,type Organ} from "./data";
 const BODY_IMAGE="/anatomy-body.webp";
-const HEART_IMAGE="/anatomy-heart.webp";
+const HEART_IMAGE="/anatomy-heart-labeled.webp";
 function Figure({onSelect}:{onSelect:(o:Organ)=>void}){return <div className="figure"><img className="atlas-body-image" src={BODY_IMAGE} alt="인체 주요 장기와 위치를 보여주는 해부학 일러스트" loading="eager"/><p className="figure-note">오른쪽 기관 목록을 눌러 자세히 알아보세요.</p></div>}
 const healthInfo:Record<string,{diseases:{name:string;description:string}[];facts:string[]}>={
 brain:{diseases:[{name:"뇌졸중",description:"뇌혈관이 막히거나 터져 뇌 기능에 문제가 생기는 질환입니다."},{name:"치매",description:"기억력과 일상생활 능력 등에 영향을 줄 수 있는 여러 질환을 통틀어 부르는 말입니다."}],facts:["뇌는 생각뿐 아니라 움직임과 감각도 조절합니다."]},
