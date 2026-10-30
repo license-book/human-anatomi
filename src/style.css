@@ -8,3 +8,6 @@
 .detail-illustration img[src*="anatomy-heart-labeled"]{display:block;width:100%;height:auto;max-height:none;object-fit:contain;padding:0}
 .detail-panel:has(img[src*="anatomy-heart-labeled"]) .info-tabs{position:relative;clear:both;margin-top:16px}
 @media(max-width:760px){.detail-illustration:has(img[src*="anatomy-heart-labeled"]){height:auto;min-height:0}.detail-illustration img[src*="anatomy-heart-labeled"]{height:auto;max-height:none}}
+
+/* Readable disease summaries and conversational medical Q&A */
+.info>div{padding:12px 0;border-bottom:1px solid #e5eaf1}.info>div:last-child{border-bottom:0}.info .medical-qa h3{font-size:14px;line-height:1.55;color:#172338;margin:0 0 8px}.info .medical-qa p{font-size:13px;line-height:1.75;margin:0;color:#42536a}.info .medical-qa p strong{color:#1472ed}.info{min-height:150px}
