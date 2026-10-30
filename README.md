@@ -1,11 +1,22 @@
 # 우리 몸 한눈에 보기
 
-일반인을 위한 한국어 2D 인체 해부학 PWA입니다.
+일반인을 위한 한국어 2D 인체 도감 PWA.
 
-- 전신 및 부위별 해부도 탐색
-- 이미지와 분리된 한글 명칭
-- 기관의 대략적인 위치와 기본 역할 설명
-- 모바일 우선, 로그인 및 데이터베이스 없음
-- 의료 진단 및 전문 의학 정보 제공 목적 아님
+## 개발
 
-기술: React, TypeScript, Vite, PWA. 배포 목표: Cloudflare Pages.
+```bash
+npm install
+npm run dev
+npm run build
+```
+
+## Cloudflare Pages
+
+Build command: `npm run build`  
+Output directory: `dist`
+
+## 현황
+
+첫 번째 프로토타입: 모바일 화면, 기관 검색, 전신 개념도 터치, 기초 설명, 즐겨찾기, PWA 설치 설정.
+
+현재 그림은 위치를 단순화한 SVG 개념도이며, 검수된 정식 해부학 이미지로 교체할 예정입니다. 의료 진단용이 아닙니다.
